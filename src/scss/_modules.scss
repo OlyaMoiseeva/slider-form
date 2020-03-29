@@ -1,0 +1,32 @@
+$cherry-color: #B63155;
+$pineapple-color: #EBBD65;
+$razz-color: #EA539E;
+$btn-color: #FDA92C;
+$pgntn-color: #FF9D0B;
+$font-color: #fff;
+
+$pgntn-font: "Finch W00 Regular";
+$primary-font: Engine;
+$secondary-font-l: "Oswald light";
+$secondary-font-m: "Oswald medium";
+
+@font-face {
+	font-family: "Finch W00 Regular";
+	src: url(../../src/fonts/FinchW00Regular.woff);
+	src: url(../../src/fonts/FinchW00Regular.woff2);
+}
+@font-face {
+	font-family: Engine;
+	src: url(../../src/fonts/engine.woff);
+	src: url(../../src/fonts/engine.woff2);
+}
+@font-face {
+	font-family: "Oswald light";
+	src: url(../../src/fonts/Oswaldlight.woff);
+	src: url(../../src/fonts/Oswaldlight.woff2);
+}
+@font-face {
+	font-family: "Oswald medium";
+	src: url(../../src/fonts/Oswaldmediun.woff);
+	src: url(../../src/fonts/Oswaldmedium.woff2);
+}

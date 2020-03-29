@@ -1,0 +1,176 @@
+@media screen and (max-width: 1024px) {
+  body .banner {
+		padding: 50px 20px 0;
+  	.banner__main-content {
+	    margin: 0 auto;
+	    text-align: center;
+	    width: 100%;
+	    .banner__title {
+	    	margin-bottom: 27px;
+	    }
+	    .banner__social-info {
+				margin: 0 auto;
+				.banner__btn {
+					background: transparent;
+					font-size: 35px;
+				}
+				.banner__social-networks {
+	        margin-bottom: 20px;
+	      }
+	    }
+	    .banner__description {
+				margin-bottom: 300px;
+				&:after {
+					right: calc(50% - 295px);
+				}
+				&:before {
+					right: calc(50% - 225px);
+				}
+	    }
+	  }
+	  .banner__steps .banner__step:not(:last-child):before {
+      left: 175px;
+    }
+  }
+  .fade__img-wrapper {
+	  .fade_img {
+	  	width: 400px;
+	  	left: calc(50% - 200px);
+	  	top: 40px;
+	  }
+	}
+	body main .fade .slick-dots {
+		z-index: 999;
+	}
+}
+@media screen and (max-width: 830px) {
+	body .banner .banner__steps .banner__step .step_description {
+		font-size: 20px;
+	}
+	body .banner .banner__steps .banner__step:not(:last-child):before {
+    left: 150px;
+  }
+}
+@media screen and (max-width: 720px) {
+	body .banner {
+		.banner__steps {
+			display: none;
+		}
+		.banner__main-content {
+			.banner__title {
+				font-size: 38px;
+			}
+			.banner__description {
+				margin-bottom: 450px;
+				font-size: 24px;
+				&:after {
+					right: calc(60% - 115px);
+					top: 35px;
+				}
+				&:before {
+					right: calc(60% - 40px);
+					top: 40px;
+				}
+	    }
+			.banner__social-info {
+				width: 100%;
+				.banner__social-networks {
+					width: 100%;
+					justify-content: space-around;
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+	body main .fade .slick-dots {
+	  width: 200px;
+	  flex-direction: row;
+	  top: 435px;
+	  right: 0;
+	  left: 0;
+	  margin: 141px auto 0 auto;
+	  #slick-slide00 button:before {
+	    content: "";
+	    border-radius: 50%;
+	  }
+	  #slick-slide01 button:before {
+	    content: "";
+	    border-radius: 50%;
+	  }
+	  #slick-slide02 button:before {
+	    content: "";
+	    border-radius: 50%;
+	  }
+	  li.slick-active button:before {
+	    background: $pgntn-color;
+	    opacity: 1;
+	  }
+	  li button:before{
+	    background: #fff;
+	    opacity: 1;
+	    font-family: $pgntn-font;
+	  }
+	}
+	.fade__img-wrapper {
+	  .fade_img {
+	  	top: 90px;
+	  	left: calc(50% - 230px);
+	  }
+	}
+}
+@media screen and (max-width: 460px) {
+	body .banner {
+		padding: 30px 15px 0;
+		.banner__main-content {
+			.banner__social-info .banner__btn {
+				font-size: 24px;
+	    }
+			.banner__title {
+				font-size: 30px;
+				line-height: 30px;
+			}
+			.banner__description {
+				margin-bottom: 450px;
+				font-size: 18px;
+				&:after {
+					right: calc(60% - 95px);
+					top: 35px;
+				}
+				&:before {
+					right: calc(60% - 20px);
+					top: 40px;
+				}
+	    }
+	  }
+	}
+	body main .fade .slick-dots {
+	  top: 400px;
+	}
+	.fade .slick-track .fade__slide .fade__img-wrapper {
+	  .fade_img {
+	  	width: 300px;
+	  	left: calc(50% - 180px);
+	  	top: 110px;
+	  }
+	  &_1:after {
+      width: 296px;
+      height: 290px;
+      top: 100px;
+      right: calc(30% - 80px);
+      background-size: contain;
+    }
+    &_2:after {
+      width: 326px;
+	    height: 287px;
+	    top: 100px;
+	    background-size: contain;
+    }
+    &_3:after {
+      width: 300px;
+      height: 288px;
+      top: 100px;
+      background-size: contain;
+      right: calc(30% - 80px);
+    }
+	}
+}

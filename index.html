@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>slider</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="dist/css/main.css">
+  <link rel="stylesheet" href="dist/css/dropzone.css" type="text/css">
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+</head>
+<body>
+  <main class="main">
+    <div class="slider-container">
+      <div class="fade">
+        <div class="fade__slide fade__slide_1">
+          <div class="fade__img-wrapper fade__img-wrapper_1">
+            <img class="fade_img" alt="" src="src/images/cherry.png">
+          </div>
+        </div>
+        <div class="fade__slide fade__slide_2">
+          <div class="fade__img-wrapper fade__img-wrapper_2">
+            <img class="fade_img" alt="" src="src/images/pineapple.png">
+          </div>
+        </div>
+        <div class="fade__slide fade__slide_3">
+          <div class="fade__img-wrapper fade__img-wrapper_3">
+            <img class="fade_img" alt="" src="src/images/razz.png">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="banner">
+        <div class="banner__main-content">
+          <h1 class="banner__title">Лёгкое настроение &#8212; на десерт!</h1>
+          <p class="banner__description">Выигрывай призы с Ягодным Лукошком</p>
+          <div class="banner__social-info">
+            <input  class="banner__btn" type="button" name="check" value="Загрузить чек на сайте">
+            <p class="banner__btn-desc">или в чат-боте</p>
+            <div class="banner__social-networks">
+              <img alt="" class="banner__social-icon" src="src/images/icon_viber.png">
+              <img alt="" class="banner__social-icon" src="src/images/icon_telegram.png">
+              <img alt="" class="banner__social-icon" src="src/images/icon_fb.png">
+              <img alt="" class="banner__social-icon" src="src/images/icon_vk.png">
+              <img alt="" class="banner__social-icon" src="src/images/icon_odnoklassniki.png">
+            </div>
+          </div>
+        </div>
+        <div class="banner__steps">
+          <div class="banner__step step">
+            <div class="step__num">1</div>
+            <div class="step_description">Купите 2 упаковки Ягодного Лукошка</div>
+          </div>
+          <div class="banner__step">
+            <div class="step__num">2</div>
+            <div class="step_description">Зарегистрируйте чек в чат-боте или на сайте</div>
+          </div>
+          <div class="banner__step">
+            <div class="step__num">3</div>
+            <div class="step_description">Получите кофе<br>в подарок</div>
+          </div>
+          <div class="banner__step">
+            <div class="step__num">4</div>
+            <div class="step_description">Учавствуйте в ежедневном розыгрыше билетов в кино</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div class="form inv">
+    <div class="container">
+      <form class="form__data" enctype="multipart/form-data">
+        <div class="form__title">Отправьте нам фотографию чека — получите кофе в подарок и возможность выиграть билеты в кино!</div>
+        <div class="form__input-wrapper form__user-name">
+          <input class="form__input" id="user-name" type="text" name="user-name" required>
+          <label class="form__label" for="user-name">Ваше имя</label>
+        </div>
+        <div class="form__input-wrapper form__city">
+          <div class="spoiler form__input">Выберите Ваш город</div>
+          <ul class="spoiler__content">
+            <li class="spoiler__link">Москва</li>
+            <li class="spoiler__link">Санкт-Петербург</li>
+          </ul>
+        </div>
+        <div class="form__input-wrapper form__user-e-mail">
+          <input class="form__input" id="user-e-mail" type="e-mail" name="user-e-mail" required>
+          <label class="form__label" for="user-e-mail">Ваш e-mail</label>
+        </div>
+        <div class="form__input-wrapper form__user-tel">
+          <input class="form__input" id="user-tel" type="text" name="user-tel" required>
+          <label class="form__label" for="user-tel">Ваш телефон</label>
+        </div>
+        <div action="/file-upload" class="dropzone" id="file"></div>
+        <div>
+          <input class="form__send" type="submit" name="send" placeholder="Отправить">
+          <input class="form__back-btn" type="button" name="back" value="Назад">
+        </div>
+      </form>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="dist/js/main-min.js"></script>
+  <script src="dist/js/dropzone-min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+</body>
+</html>
